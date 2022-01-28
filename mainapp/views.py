@@ -299,7 +299,7 @@ def q6(request):
 
 	if request.method == 'POST' :
 
-		if 'q1a1' in request.POST and not 'q1a2' in request.POST and not 'q1a3' in request.POST :
+		if 'q1a1' in request.POST and not 'q1a2' in request.POST and 'q1a3' in request.POST :
 
 			return render(request, 'mainapp/res6.html')
 
