@@ -15,8 +15,8 @@ def q1(request):
 		if not 'q1a1' in request.POST and 'q1a2' in request.POST and 'q1a3' in request.POST and 'q1a4' in request.POST and not 'q1a5' in request.POST:
 
 			question = {
-				'question':'Why is château perché trying to make you be non judgmental of yourself? (1 answer accepted)<br>Pourquoi est-ce que Château Perché t’invite à être dans le non-jugement envers toi-même? (1 bonne réponse)',
-				'answer1':"To help you let go, to free yourself and experiment<br>Afin de t’aider à lâcher prise, te libérer et expérimenter",
+				'question':'<p>Why is château perché trying to make you be non judgmental of yourself? (1 answer accepted)</p><p>Pourquoi est-ce que Château Perché t’invite à être dans le non-jugement envers toi-même? (1 bonne réponse)</p>',
+				'answer1':"<p>To help you let go, to free yourself and experiment</p><p>Afin de t’aider à lâcher prise, te libérer et expérimenter</p>",
 				'answer2': "It helps you see clearly<br>Parce que ça t’aide à y voir plus clair",
 				'answer3': "To help you cultivate a peaceful mind<br>Afin de t’aider à être en paix avec toi-même",
 				'answer4':"All of the above<br>Toutes les réponses ci-dessus",
@@ -240,7 +240,7 @@ def q4(request):
 	
 
 	question = {
-		'question':"What could it be? (select the 2 correct answers)<br>Qu’est ce que ça t’évoque? (sélectionne la bonne réponse)",
+		'question':"What could it be? (select the 2 correct answers)<br>Qu’est ce que ça t’évoque? (sélectionne 2 bonnes réponses)",
 		'answer1':"A shelter when everything becomes too intense<br>Un refuge quand tout devient trop intense",
 		'answer2': "My playground love?<br> Mon “playground love”?",
 		'answer3': "A place to learn and explore around sexuality<br>Un endroit où apprendre et explorer",
