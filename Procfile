@@ -1,1 +1,1 @@
-web : gunicorn --pythonpath cpsite cpsite.wsgi
+web : gunicorn cpsite.wsgi --log-file
