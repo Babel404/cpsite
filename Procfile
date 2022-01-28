@@ -1,1 +1,1 @@
-web : gunicorn cpsite.cpsite.wsgi
+web : gunicorn --pythonpath cpsite cpsite.wsgi
