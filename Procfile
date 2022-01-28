@@ -1,1 +1,1 @@
-web : gunicorn application:cpsite.wsgi
+web : gunicorn application:mainapp
