@@ -19,3 +19,9 @@ body {
 	margin-left: 10%;
 	margin-right: 10%;
 }
+
+@viewport {
+
+	zoom:1.0;
+	width: extend-to-zoom;
+}
