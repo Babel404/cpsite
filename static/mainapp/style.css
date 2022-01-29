@@ -11,3 +11,11 @@ image {
     max-height: 300px;
     max-width: 300px; /* ie8 */
 }
+
+body {
+
+	min-height: 40px;
+	margin-top: 3%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
