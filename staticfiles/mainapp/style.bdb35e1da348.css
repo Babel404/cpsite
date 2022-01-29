@@ -1,0 +1,29 @@
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+
+image {
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 300px; /* ie8 */
+}
+
+body {
+	background: white url("images/Fond.4acc0179ed3e.png") no-repeat ;
+	min-height: 40px;
+	margin-top: 3%;
+	margin-left: 10%;
+	margin-right: 10%; 
+}
+
+@viewport {
+
+	zoom:1.0;
+	width: extend-to-zoom;
+}

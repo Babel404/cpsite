@@ -2,14 +2,25 @@
 
 
 {% block content %}
+{% load static %}
 
-<div style="margin-left: 30px">
-MESSAGE: HURRAY :D YOU MADE IT HERE, SO PROUD OF YOU...AND SO LOOKING FORWARD TO WELCOME YOU <3 <br>
-HERE YOU GO: Lien billetterie<br>
-<br><br>
-MESSAGE: HOURRAH :D TU L’AS FAIT, TELLEMENT FIER·E·S DE TOI…ET TELLEMENT IMPATIENT·E·S DE T'ACCUEILLIR <3<br>
-HERE YOU GO: Lien billetterie<br>
+<div class="card horizontal">
+  <div class="card-stacked">
+    <div class="card-content">
+      <p> 
+<b>HURRAY :D</b> YOU MADE IT HERE, SO PROUD OF YOU...AND SO LOOKING FORWARD TO WELCOME YOU <3 <br>
+<b>HERE YOU GO:</b> Click on the logo</p>
+<br>
+<p>
+<b>HOURRAH :D</b><i> TU L’AS FAIT, TELLEMENT FIER·E·S DE TOI…ET TELLEMENT IMPATIENT·E·S DE T'ACCUEILLIR <3<br>
+<b>HERE YOU GO:</b> Clique sur le logo<br></i></b>
+</p>
+<a href="/">
+<image class="logo" src="{% static 'mainapp/images/logo.png' %}" />
+</a>
+</div></div></div>
 
 
 
-</div>{% endblock content %}
+</div>
+{% endblock content %}

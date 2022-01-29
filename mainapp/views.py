@@ -206,7 +206,7 @@ def q3(request):
 	
 
 	question = {
-		'question':"<p><b>According to you, which situation is not respecting consent? [situation which is obviously not welcome at Château Perché] (select 2 correct answers)</b></p><p><i>Selon toi, quelles sont les situations qui ne respectent pas le consentement?[situations qui ne sont évidemment pas les bienvenues au Château Perché] (sélectionne 2 bonnes réponses)</i></p>",
+		'question':"<p><b>According to you, which situation is NOT respecting consent? [situation which is obviously not welcome at Château Perché] (select 2 correct answers)</b></p><p><i>Selon toi, quelles sont les situations qui ne respectent PAS le consentement?[situations qui ne sont évidemment pas les bienvenues au Château Perché] (sélectionne 2 bonnes réponses)</i></p>",
 		'answer1':"<b>Someone you desire is being vulnerable (drugs, alcohol, other...), you take that opportunity to get closer and fulfill this desire</b> / <i>Quelqu’un que tu kiffes se retrouve dans un moment de vulnérabilité (drogues, alcool, autres…), tu saisis cette opportunité pour t’en rapprocher et tenter d’assouvir ton désir</i>",
 		'answer2': "<b>Someone you desire is being vulnerable (drugs, alcohol, other...), you try to get closer cuz that’s what you desire, everyone is f****d up anyway</b> / <i>Quelqu’un que tu kiffes se retrouve dans un moment de vulnérabilité (drogues, alcool, autres…), tu saisis cette opportunité pour t’en rapprocher parce que c’est ce que tu désires, et de toute façon, tout le monde est éclaté</i>",
 		'answer3': "<b>Someone you desire is being vulnerable (drugs, alcohol, other...), you want to get closer but hey, maybe this person just wants to enjoy and not get involved with your desire</b> / <i>Quelqu’un que tu kiffes se retrouve dans un moment de vulnérabilité (drogues, alcool, autres…), tu aimerai t’en rapprocher, mais attends, peut-être que cette personne est juste en train de kiffer et n’a pas envie de faire parti de ton désir</i>",
@@ -309,7 +309,7 @@ def q6(request):
 
 	question = {
 		'question':"<p><b>Are you willing to get creative?  (select 2 correct answers)</b></p><p><i>Es-tu prêt·e à laisser parler ta créativité? (sélectionne les 2 bonnes réponses)</i></p>",
-		'answer1':"<b>Oh yeaah, I definitely want to be a part of the magic!<//b> / <i>Oh yeaah, trop envie de contribuer à la magie!</i>",
+		'answer1':"<b>Oh yeaah, I definitely want to be a part of the magic!</b> / <i>Oh yeaah, trop envie de contribuer à la magie!</i>",
 		'answer2': "<b>A hat, a cape, should do the trick</b> / <i>Un chapeau, une cape, ça devrait le faire</i>",
 		'answer3': "<b>Finally a platform where I can express myself</b> / <i>Enfin une plateforme où je vais pouvoir m’exprimer</i>",
 	}
