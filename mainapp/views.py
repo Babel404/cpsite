@@ -308,7 +308,7 @@ def q6(request):
 	title = 'COSTUME'
 
 	question = {
-		'question':"<p><b>Are you willing to get creative?  (select 2 correct answers)</b></p><p><i>Es-tu prêt·e à laisser parler ta créativité? (sélectionne les 2 bonnes réponses)</i></p>",
+		'question':"<p><b>    Are you willing to get creative and to be RESPECTFUL towards the chosen theme?  (select the correct answers)</b></p><p><i>    Es-tu prêt·e à laisser parler ta créativité et à créer ton costume dans le RESPECT du thème choisi? (sélectionne les bonnes réponses)</i></p>",
 		'answer1':"<b>Oh yeaah, I definitely want to be a part of the magic!</b> / <i>Oh yeaah, trop envie de contribuer à la magie!</i>",
 		'answer2': "<b>A hat, a cape, should do the trick</b> / <i>Un chapeau, une cape, ça devrait le faire</i>",
 		'answer3': "<b>Finally a platform where I can express myself</b> / <i>Enfin une plateforme où je vais pouvoir m’exprimer</i>",
