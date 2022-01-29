@@ -15,11 +15,11 @@ def q1(request):
 		if not 'q1a1' in request.POST and 'q1a2' in request.POST and 'q1a3' in request.POST and 'q1a4' in request.POST and not 'q1a5' in request.POST:
 
 			question = {
-				'question':'<p>Why is château perché trying to make you be non judgmental of yourself? (1 answer accepted)</p><p>Pourquoi est-ce que Château Perché t’invite à être dans le non-jugement envers toi-même? (1 bonne réponse)</p>',
-				'answer1':"<p>To help you let go, to free yourself and experiment</p><p>Afin de t’aider à lâcher prise, te libérer et expérimenter</p>",
-				'answer2': "It helps you see clearly<br>Parce que ça t’aide à y voir plus clair",
-				'answer3': "To help you cultivate a peaceful mind<br>Afin de t’aider à être en paix avec toi-même",
-				'answer4':"All of the above<br>Toutes les réponses ci-dessus",
+				'question':'<p><b>Why is château perché trying to make you be non judgmental of yourself? (1 answer accepted)</b></p><p><i>Pourquoi est-ce que Château Perché t’invite à être dans le non-jugement envers toi-même? (1 bonne réponse)</i></p>',
+				'answer1':"<b>To help you let go, to free yourself and experiment</b> / <i>Afin de t’aider à lâcher prise, te libérer et expérimenter</i>",
+				'answer2': "<b>It helps you see clearly</b> / <i>Parce que ça t’aide à y voir plus clair</i>",
+				'answer3': "<b>To help you cultivate a peaceful mind</b> / <i>Afin de t’aider à être en paix avec toi-même</i>",
+				'answer4':"<b>All of the above</b> / <i>Toutes les réponses ci-dessus</i>",
 			}
 
 			context = {
@@ -37,11 +37,11 @@ def q1(request):
 		if  not 'q2a1' in request.POST and not 'q2a2' in request.POST and not 'q2a3' in request.POST and 'q2a4' in request.POST :
 
 			question = {
-				'question':'If you see someone naked on the dancefloor: (select the 3 correct answers)<br>Si tu vois quelqu’un nu sur le dancefloor: (sélectionne 3 bonnes réponses)',
-				'answer1':"I'm happy this person accepts their body<br>Ahh, enfin quelqu’un qui accepte son corps",
-				'answer2': "You stare?<br>Tu mates?",
-				'answer3': "You smile?<br>Tu souris?",
-				'answer4':"Why am I the only one naked on the dancefloor?<br>Pourquoi suis-je le/la seul·e nu·e sur le dancefloor?",
+				'question':'<p><b>If you see someone naked on the dancefloor: (select 3 correct answers)</b></p><p><i>Si tu vois quelqu’un nu sur le dancefloor: (sélectionne 3 bonnes réponses)</i></p>',
+				'answer1':"<b>I'm happy this person accepts their body</b> / <i>Ahh, enfin quelqu’un qui accepte son corps</i>",
+				'answer2': "<b>You stare?</b> / <i>Tu mates?</i>",
+				'answer3': "<b>You smile?</b> / <i>Tu souris?</i>",
+				'answer4':"<b>Why am I the only one naked on the dancefloor?</b> / <i>Pourquoi suis-je le/la seul·e nu·e sur le dancefloor?</i>",
 			}
 
 			context = {
@@ -60,12 +60,12 @@ def q1(request):
 			return render(request, 'mainapp/res1.html')
 
 	question = {
-		'question':'Why is Château Perché trying to make you be non judgmental of others? (select the 3 correct answers)<br>Pourquoi est-ce que Château Perché t’invite à être dans le non-jugement envers les autres? (sélectionne 3 bonnes réponses)',
-		'answer1':"Cuz you watched it on mainstream media?<br>Parce que tu as vu ça à la télé?",
-		'answer2': "Non-judgment opens you up to more of life’s beauty<br>Parce que le non-jugement te permet de voir la vie d’une manière encore plus belle",
-		'answer3': "To develop an empathic approach to people<br>Afin de développer de l’empathie envers les autres",
-		'answer4': "It helps others to let go<br>Parce que ça t’aide à lâcher prise",
-		'answer5': "Namaste",
+		'question':'<p><b>Why is Château Perché trying to make you be non judgmental of others? (select 3 correct answers)</b></p><p><i>Pourquoi est-ce que Château Perché t’invite à être dans le non-jugement envers les autres? (sélectionne 3 bonnes réponses)</i></p>',
+		'answer1':"<b>Cuz you watched it on mainstream media?</b> / <i>Parce que tu as vu ça à la télé?</i>",
+		'answer2': "<b>Non-judgment opens you up to more of life’s beauty</b> / <i>Parce que le non-jugement te permet de voir la vie d’une manière encore plus belle</i>",
+		'answer3': "<b>To develop an empathic approach to people</b> / <i>Afin de développer de l’empathie envers les autres</i>",
+		'answer4': "<b>It helps others to let go</b> / <i>Parce que ça t’aide à lâcher prise</i>",
+		'answer5': "<b>Namaste</b>",
 	}
 
 	"""
@@ -103,10 +103,10 @@ def q2(request):
 		if not 'q1a1' in request.POST and 'q1a2' in request.POST and not 'q3a3' in request.POST :
 
 			question = {
-				'question':'Climate change, does that resonate with you? (select 2 correct answers)<br>Le changement climatique, ça te parle? (sélectionne les 2 bonnes réponses)',
-				'answer1':"It's too late anyway<br>Foutu pour foutu!",
-				'answer2': "I am Pachamama<br>Je suis Pachamama",
-				'answer3': "I do and by doing, I am a part of the solution<br>Je fais et en faisant, je fais parti de la solution",
+				'question':'<p><b>Climate change, does that resonate with you? (select 2 correct answers)</b></p><p><i>Le changement climatique, ça te parle? (sélectionne les 2 bonnes réponses)</i></p>',
+				'answer1':"<b>It's too late anyway</b> / <i>Foutu pour foutu!</i>",
+				'answer2': "<b>I am Pachamama</b> / <i>Je suis Pachamama</i>",
+				'answer3': "<b>I do and by doing, I am a part of the solution</b> / <i>Je fais et en faisant, je fais parti de la solution</i>",
 			}
 
 			context = {
@@ -123,11 +123,12 @@ def q2(request):
 		if not 'q2a1' in request.POST and 'q2a2' in request.POST and 'q2a3' in request.POST :
 
 			question = {
-				'question':"We promote a “ I come with Shuttle Bus Only transport mode”, why ? (Select 4 correct answers)<br>On met en avant le “je viens, mais seulement en navette”, pourquoi? (Sélectionne 4 bonnes réponses)",
-				'answer1':"It’s way more ecological<br>C’est indiscutablement plus écologique",
-				'answer2': "The budget we would use for parking slots can be reinjected in artistic realisations (the deco budget is the same as for Château Perché 2019 but with half the crowds’ size!!)<br>Le budget qu’on mettrait dans les places de parking pourrait être réinjecté dans les réalisations artistiques (le budget déco est le même que pour le château Perché 2019 mais avec moitié moins de monde!!)",
-				'answer3': "I will benefit from a “Queue- cut at arrival”<br>Je bénéficierai d’un coupe-queue en arrivant",
-				'answer4': "Because buses are faster than cars<br>Le bus c’est plus rapide",
+				'question':"<p><b>We promote a “ I come with Shuttle Bus Only transport mode”, why ? (Select the correct answers)</b></p><p><i>On met en avant le “je viens, mais seulement en navette”, pourquoi? (Sélectionne la bonne réponse)</i></p>",
+				'answer1':"<b>It’s way more ecological</b> / <i>C’est indiscutablement plus écologique</i>",
+				'answer2': "<b>The budget we would use for parking slots can be reinjected in artistic realisations (the deco budget is the same as for Château Perché 2019 but with half the crowds’ size!!)</b> / <i>Le budget qu’on mettrait dans les places de parking pourrait être réinjecté dans les réalisations artistiques (le budget déco est le même que pour le château Perché 2019 mais avec moitié moins de monde!!)</i>",
+				'answer3': "<b>I will benefit from a “Queue- cut at arrival”</b> / <i>Je bénéficierai d’un coupe-queue en arrivant</i>",
+				'answer4': "<b>Because buses are faster than cars</b> / <i>Le bus c’est plus rapide</i>",
+				'answer5': "<b>All of the above</b> / <i>Toutes les réponses ci-dessus</i>",
 
 			}
 
@@ -139,21 +140,22 @@ def q2(request):
 				'answer2' : question['answer2'],
 				'answer3' : question['answer3'],
 				'answer4' : question['answer4'],
+				'answer5' : question['answer5'],
 
 			}
 
 			return render(request, 'mainapp/2q3.html', context)
 
-		if 'q3a1' in request.POST and 'q3a2' in request.POST and 'q3a3' in request.POST and 'q3a4' in request.POST:
+		if not 'q3a1' in request.POST and not 'q3a2' in request.POST and not 'q3a3' in request.POST and not 'q3a4' in request.POST and 'q3a5' in request.POST :
 			return render(request, 'mainapp/res2.html')
 
 	
 
 	question = {
-		'question':"Do you put your cigarettes butts in your grannys' flower pots? (1 correct answer)<br>Est-ce que tu jettes tes cigarettes dans les pots de fleurs de ta mère-grand? (1 bonne réponse)",
-		'answer1':"Oopsy",
-		'answer2': "Naaah, I've got my pocket ashtray<br>Naan, j’ai mon cendrier de poche of course!",
-		'answer3': "It's okay, I'll throw them tomorrow<br>Ça vaaaa, je les mettrai dans un cendrier demain",
+		'question':"<p><b>Do you put your cigarettes butts in your grannys' flower pots? (1 correct answer)</b></p><p><i>Est-ce que tu jettes tes cigarettes dans les pots de fleurs de ta mère-grand? (1 bonne réponse)</i></p>",
+		'answer1':"<b>Oopsy</b>",
+		'answer2': "<b>Naaah, I've got my pocket ashtray</b> / <i>Naan, j’ai mon cendrier de poche of course!</i>",
+		'answer3': "<b>It's okay, I'll throw them tomorrow</b> / <i>Ça vaaaa, je les mettrai dans un cendrier demain</i>",
 	}
 
 
@@ -177,11 +179,11 @@ def q3(request):
 		if 'q1a1' in request.POST and 'q1a2' in request.POST and not 'q1a3' in request.POST:
 
 			question = {
-				'question':'If you come to witness a delicate situation, you: (select 2 correct answers)<br>Si tu es témoin d’une situation délicate, tu: (sélectionne 2 bonnes réponses)',
-				'answer1':"Look away, you'll forget about it anyway<br>Fais style que t’as rien vu, t’oublieras vite de toute façon",
-				'answer2': "Inform one of the Château Perché crew members<br>Informes un des membres du crew Château Perché",
-				'answer3': "Go and help whoever is experiencing difficulties<br>Va aider la personne en difficulté",
-				'answer4' : "Continue dancing the night/day away<br>Tu continues à danser comme s’il n’y avait pas de lendemain"
+				'question':'<p><b>If you come to witness a delicate situation, you: (select 2 correct answers)</b></p><p><i>Si tu es témoin d’une situation délicate, tu: (sélectionne 2 bonnes réponses)</i></p>',
+				'answer1':"<b>Look away, you'll forget about it anyway</b> / <i>Fais style que t’as rien vu, t’oublieras vite de toute façon</i>",
+				'answer2': "<b>Inform one of the Château Perché crew members</b> / <i>Informes un des membres du crew Château Perché</i>",
+				'answer3': "<b>Go and help whoever is experiencing difficulties</b> / <i>Va aider la personne en difficulté</i>",
+				'answer4' : "<b>Continue dancing the night/day away</b> / <i>Tu continues à danser comme s’il n’y avait pas de lendemain</i>"
 			}
 
 
@@ -204,10 +206,10 @@ def q3(request):
 	
 
 	question = {
-		'question':"According to you, which situation is not respecting consent? \[situation which is obviously not welcome at Château Perché\] (select 2 correct answers)<br>Selon toi, quelles sont les situations qui ne respectent pas le consentement?[situations qui ne sont évidemment pas les bienvenues au Château Perché] (sélectionne 2 bonnes réponses)",
-		'answer1':"Someone you desire is being vulnerable (drugs, alcohol, other...), you take that opportunity to get closer and fulfill this desire<br>Quelqu’un que tu kiffes se retrouve dans un moment de vulnérabilité (drogues, alcool, autres…), tu saisis cette opportunité pour t’en rapprocher et tenter d’assouvir ton désir",
-		'answer2': "Someone you desire is being vulnerable (drugs, alcohol, other...), you try to get closer cuz that’s what you desire, everyone is f****d up anyway<br>Quelqu’un que tu kiffes se retrouve dans un moment de vulnérabilité (drogues, alcool, autres…), tu saisis cette opportunité pour t’en rapprocher parce que c’est ce que tu désires, et de toute façon, tout le monde est éclaté",
-		'answer3': "Someone you desire is being vulnerable (drugs, alcohol, other...), you want to get closer but hey, maybe this person just wants to enjoy and not get involved with your desire<br>Quelqu’un que tu kiffes se retrouve dans un moment de vulnérabilité (drogues, alcool, autres…), tu aimerai t’en rapprocher, mais attends, peut-être que cette personne est juste en train de kiffer et n’a pas envie de faire parti de ton désir",
+		'question':"<p><b>According to you, which situation is not respecting consent? [situation which is obviously not welcome at Château Perché] (select 2 correct answers)</b></p><p><i>Selon toi, quelles sont les situations qui ne respectent pas le consentement?[situations qui ne sont évidemment pas les bienvenues au Château Perché] (sélectionne 2 bonnes réponses)</i></p>",
+		'answer1':"<b>Someone you desire is being vulnerable (drugs, alcohol, other...), you take that opportunity to get closer and fulfill this desire</b> / <i>Quelqu’un que tu kiffes se retrouve dans un moment de vulnérabilité (drogues, alcool, autres…), tu saisis cette opportunité pour t’en rapprocher et tenter d’assouvir ton désir</i>",
+		'answer2': "<b>Someone you desire is being vulnerable (drugs, alcohol, other...), you try to get closer cuz that’s what you desire, everyone is f****d up anyway</b> / <i>Quelqu’un que tu kiffes se retrouve dans un moment de vulnérabilité (drogues, alcool, autres…), tu saisis cette opportunité pour t’en rapprocher parce que c’est ce que tu désires, et de toute façon, tout le monde est éclaté</i>",
+		'answer3': "<b>Someone you desire is being vulnerable (drugs, alcohol, other...), you want to get closer but hey, maybe this person just wants to enjoy and not get involved with your desire</b> / <i>Quelqu’un que tu kiffes se retrouve dans un moment de vulnérabilité (drogues, alcool, autres…), tu aimerai t’en rapprocher, mais attends, peut-être que cette personne est juste en train de kiffer et n’a pas envie de faire parti de ton désir</i>",
 	}
 
 	
@@ -240,10 +242,10 @@ def q4(request):
 	
 
 	question = {
-		'question':"What could it be? (select the 2 correct answers)<br>Qu’est ce que ça t’évoque? (sélectionne 2 bonnes réponses)",
-		'answer1':"A shelter when everything becomes too intense<br>Un refuge quand tout devient trop intense",
-		'answer2': "My playground love?<br> Mon “playground love”?",
-		'answer3': "A place to learn and explore around sexuality<br>Un endroit où apprendre et explorer",
+		'question':"<p><b>What could it be? (select 2 correct answers)</b></p><p><i>Qu’est ce que ça t’évoque? (sélectionne 2 bonnes réponses)</i></p>",
+		'answer1':"<b>A shelter when everything becomes too intense</b> / <i>Un refuge quand tout devient trop intense</i>",
+		'answer2': "<b>My playground love?</b> /  <i>Mon “playground love”?</i>",
+		'answer3': "<b>A place to learn and explore around sexuality</b> / <i>Un endroit où apprendre et explorer</i>",
 	}
 
 	
@@ -273,10 +275,10 @@ def q5(request):
 	title = 'BEST HUMAN'
 
 	question = {
-		'question':"Are you willing to offer and to receive?  (select the correct answer)<br>Es-tu prêt·e à offrir et à recevoir? (sélectionne la bonne réponse)",
-		'answer1':"F**K Yeaaaah, this is how I roll<br>F**K Yeaaaah, je vis pour ça",
-		'answer2': "I'm used to receiving, give me!<br>J’ai l’habitude de recevoir, donne-moi!",
-		'answer3': "Wtf, is it Xmas?<br>Wtf,c’est noel?",
+		'question':"<p><b>Are you willing to offer and to receive?  (select the correct answer)</b></p><p><i>Es-tu prêt·e à offrir et à recevoir? (sélectionne la bonne réponse)</i></p>",
+		'answer1':"<b>F**K Yeaaaah, this is how I roll</b> / <i>F**K Yeaaaah, je vis pour ça</i>",
+		'answer2': "<b>I'm used to receiving, give me!</b> / <i>J’ai l’habitude de recevoir, donne-moi!</i>",
+		'answer3': "<b>Wtf, is it Xmas?</b> / <i>Wtf,c’est noel?</i>",
 	}
 
 	
@@ -306,10 +308,10 @@ def q6(request):
 	title = 'COSTUME'
 
 	question = {
-		'question':"Are you willing to get creative?  (select the 2 correct answers)<br>Es-tu prêt·e à laisser parler ta créativité? (sélectionne les bonnes réponses)",
-		'answer1':"Oh yeaah, I definitely want to be a part of the magic!<br>Oh yeaah, trop envie de contribuer à la magie!",
-		'answer2': "A hat, a cape, should do the trick<br>Un chapeau, une cape, ça devrait le faire",
-		'answer3': "Finally a platform where I can express myself<br>Enfin une plateforme où je vais pouvoir m’exprimer",
+		'question':"<p><b>Are you willing to get creative?  (select 2 correct answers)</b></p><p><i>Es-tu prêt·e à laisser parler ta créativité? (sélectionne les 2 bonnes réponses)</i></p>",
+		'answer1':"<b>Oh yeaah, I definitely want to be a part of the magic!<//b> / <i>Oh yeaah, trop envie de contribuer à la magie!</i>",
+		'answer2': "<b>A hat, a cape, should do the trick</b> / <i>Un chapeau, une cape, ça devrait le faire</i>",
+		'answer3': "<b>Finally a platform where I can express myself</b> / <i>Enfin une plateforme où je vais pouvoir m’exprimer</i>",
 	}
 
 	
