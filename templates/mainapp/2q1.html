@@ -22,12 +22,13 @@
 <div class="card horizontal">
   <div class="card-stacked">
     <div class="card-content">
-    <p>
       <label>
         <input type="checkbox" value="{{ answer1 }}" name="q1a1" />
-        <span>{{ answer1|safe }}</span>
+        <span><b>Answer 1</b> / <i>Réponse 1</i></span>
       </label>
-    </p>
+      <p>
+        {{ answer1|safe }}
+      </p>
       </div>
     </div>
   </div>
@@ -35,11 +36,12 @@
 <div class="card horizontal">
   <div class="card-stacked">
     <div class="card-content">
-    <p>
       <label>
         <input type="checkbox" value="{{ answer2 }}" name="q1a2" />
-        <span>{{ answer2|safe }}</span>
+        <span><b>Answer 2</b> / <i>Réponse 2</i></span>
       </label>
+    <p>
+      {{ answer2|safe }}
     </p>
       </div>
     </div>
@@ -48,11 +50,12 @@
 <div class="card horizontal">
   <div class="card-stacked">
     <div class="card-content">
-    <p>
       <label>
         <input type="checkbox" value="{{ answer3 }}" name="q1a3" />
-        <span>{{ answer3|safe }}</span>
+        <span><b>Answer 3</b> / <i>Réponse 3</i></span>
       </label>
+    <p>
+      {{ answer3|safe }}
     </p>
       </div>
     </div>
